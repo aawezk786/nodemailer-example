@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/darkly/bootstrap.min.css">
+    <style media="screen">
+      main {
+        margin-top: 2em;
+      }
+      .loading {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div id="email-sent" class="alert alert-primary" role="alert">
+        Message sent!
+      </div>
+      <form>
+        <fieldset class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" placeholder="Enter a message"></textarea>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="loading">
+        <img class="img-fluid" src="https://media.giphy.com/media/7fodOnLBUVamI/giphy.gif" alt="">
+      </div>
+    </main>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
